@@ -19,10 +19,20 @@ namespace bangazon
             DepartmentList.Add(Humanz);
             DepartmentList.Add(Marketz);
             DepartmentList.Add(Financing);
-
+            
             foreach(Department D in DepartmentList){
-                Console.Write(D);
+                Console.WriteLine(D);
             }
+
+            string MeetFunctionHr = Humanz.Meet();
+            Console.WriteLine("Human Resources: {0}", MeetFunctionHr);
+
+            string MeetFunctionMarketing = Marketz.Meet();
+            Console.WriteLine("Marketing: {0}", MeetFunctionMarketing);
+
+            string MeetFunctionFinance = Financing.Meet();
+            Console.WriteLine("Finance: {0}", MeetFunctionFinance);
+
         }
     }
 }
