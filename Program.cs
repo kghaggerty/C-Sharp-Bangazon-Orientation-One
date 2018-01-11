@@ -21,7 +21,7 @@ namespace bangazon
             DepartmentList.Add(Financing);
             
             foreach(Department D in DepartmentList){
-                Console.WriteLine(D);
+                Console.WriteLine($"{D.ToString()}");
             }
 
             string MeetFunctionHr = Humanz.Meet();

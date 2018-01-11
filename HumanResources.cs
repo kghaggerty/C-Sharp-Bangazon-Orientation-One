@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace bangazon
 {
-
     public class HumanResources : Department
     {
         //Create new dictionary to store policies
@@ -22,11 +21,6 @@ namespace bangazon
             {
                 Console.WriteLine($"{policy.Key}", $"{policy.Value}");
             }
-        }
-
-        public string toString()
-        {
-            return $"{_name} {_supervisor} {_employeeCount}";
         }
 
         public override string Meet()
